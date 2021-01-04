@@ -1,0 +1,23 @@
+{
+  "name": "jest-getting-started",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sum.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kato86/jest-getting-started.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kato86/jest-getting-started/issues"
+  },
+  "homepage": "https://github.com/kato86/jest-getting-started#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
