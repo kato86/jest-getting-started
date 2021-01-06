@@ -65,3 +65,29 @@ toContain() --> expect([someArray]).toContain('milk');
 7. Exceptions
 
 toThrow() --> expect(() => compileSomeCode()).toThrow('some error message');
+
+# ASYNC CODE
+
+1. Promises
+
+<code>test('return data', () => {
+    return fetchData().then(data => {
+        expect(data).toBe('return data');
+    });
+});</code>
+
+2. .resolves / .rejects
+
+<code>test('return data', () => {
+    return expect(fetchData()).resolves.toBe('return data');
+});</code>
+
+3. Async/Await
+
+<code>test('return data', async () => {
+  await expect(fetchData()).resolves.toBe('return data');
+});
+
+test('return data', async () => {
+  await expect(fetchData()).rejects.toThrow('return data');
+});</code>
