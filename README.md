@@ -91,3 +91,16 @@ toThrow() --> expect(() => compileSomeCode()).toThrow('some error message');
 test('return data', async () => {
   await expect(fetchData()).rejects.toThrow('return data');
 });</code>
+
+--> <code>beforeEach</code> and <code>afterEach</code> can handle asynchronous code
+
+<code>beforeEach(() => {
+  someFunction();
+});</code>
+
+<code>afterEach(() => {
+  someCleanFunction();
+});</code>
+
+
+
